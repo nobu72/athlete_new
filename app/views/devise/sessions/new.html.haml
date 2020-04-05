@@ -1,17 +1,49 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.index__main
+  .header
+    .header__title
+      Athlete
+    .header__login
+      = link_to "新規会員登録", new_user_registration_path()
+    
+  .post__main
+    
+
+    
+
+    %video{:class=>"post__main__video",:autoplay => "", :loop => "", :muted => "", :src => "https://i.gyazo.com/2eaad851ac3ab53a90e2e23d11bf4862.mp4"}
+    .post__main__text
+      %p このアプリケーションは
+      %p 日々の練習や試合をチーム内で共有できます。
+      %p ミーティングでメンバーが集まれなくても大丈夫。
+      %p どこにいてもミーティングに参加できます。
+    .post__main__signin
+      %h2 Log in
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field
+          = f.label :メールアドレス
+          %br/
+          = f.email_field :email, autofocus: true, autocomplete: "email"
+        .field
+          = f.label :パスワード
+          %br/
+          = f.password_field :password, autocomplete: "current-password"
+        - if devise_mapping.rememberable?
+          .field
+            = f.check_box :remember_me
+            = f.label :remember_me
+        .actions
+          = f.submit "Log in"
+      -# = render "devise/shared/links"
+
+      
+  .footer
+    %p HOME
+    %p NEWS
+    %p TEAM
+    %p MEMBER
+    %p RECRUIT
+    %p GAME
+    %p BLOG
+    %p FLAG TEAM
+    %p GALLERY
+    %p SCHEDULE

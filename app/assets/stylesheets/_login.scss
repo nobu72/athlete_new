@@ -50,17 +50,22 @@
    
   }
   &__signin{
+    height: 35%;
+    width:15%;
     background-color: #fff;
     margin-left: 75%;
     margin-top: 5%;
     background-color: rgba( 0, 0, 0, .40);
     color:white;
     // border:20px;
+    text-align: center;
     h2{
       background-color: #1b3996;
-      padding-left: 63px;
+      // padding-left: 35px;
     }
-
+  .field{
+    margin-top: 10px;
+  }
   }
 }
 
