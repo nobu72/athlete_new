@@ -1,7 +1,7 @@
 .index__main
   .header
     .header__title
-      Athlete
+      = link_to "Athlete",root_path
     .header__login
       -# = link_to "新規会員登録", new_user_registration_path()
       -# = link_to "ログイン", new_user_session_path()
@@ -11,8 +11,10 @@
 
   .post__index__main
     .post__index__main__left
+    
       .post__index__main__left__function
-        動画の投稿
+        = link_to "動画の投稿", new_post_path()
+        
       .post__index__main__left__function
         予定の追加
       .post__index__main__left__function
@@ -20,6 +22,16 @@
       
 
     .post__index__main__center
+      .post__index__main__center__video
+        
+        - @posts.each do |post|
+          .post__index__main__center__text
+            =link_to "#{post.text}",root_path
+          -# %video{:class=>"post__main__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+          
+       
+
+    
       .post__index__main__center__text
         2020/12/12 合同練習
       .post__index__main__center__text

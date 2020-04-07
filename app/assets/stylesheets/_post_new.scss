@@ -1,0 +1,32 @@
+.post__new{
+  height: calc(100vh - 300px);
+  width: 100vw;
+ padding-top: 25px;
+  background-color: #c0c0c0;
+  &__center{
+    height: 90%;
+    width: 50%;
+    background-color: white;
+    margin-left: 25%;
+    &__title{
+      font-size: 30px;
+      margin-top: 10px;
+      background-color: #1b3996;
+      color:white;
+      h1{
+        padding-left: 10px;
+      }
+    }
+    &__main{
+      #post_text{
+        height: 40px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+      }
+    }
+
+
+  }
+}
+
