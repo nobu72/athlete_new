@@ -3,13 +3,35 @@
     .header__title
       Athlete
     .header__login
-      = link_to "新規会員登録", new_user_registration_path()
-      = link_to "ログイン", new_user_session_path()
+      -# = link_to "新規会員登録", new_user_registration_path()
+      -# = link_to "ログイン", new_user_session_path()
       = link_to "ログアウト",destroy_user_session_path(),method: :delete 
       
       
 
-  .post__main
+  .post__index__main
+    .post__index__main__left
+      .post__index__main__left__function
+        動画の投稿
+      .post__index__main__left__function
+        予定の追加
+      .post__index__main__left__function
+        最新の変更
+      
+
+    .post__index__main__center
+      .post__index__main__center__text
+        2020/12/12 合同練習
+      .post__index__main__center__text
+        2020/12/12 合同練習
+      .post__index__main__center__text
+        2020/12/12 合同練習
+      .post__index__main__center__text
+        2020/12/12 合同練習
+      .post__index__main__center__text
+        2020/12/12 合同練習
+
+    .post__index__main__right
 
     
 
