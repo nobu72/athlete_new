@@ -1,5 +1,5 @@
 .post__index__main{
-  height: 100vh;
+  height: calc(100vh - 200px);
   width: 100vw;
   background-color: white;
   display: flex;
@@ -20,17 +20,34 @@
     width:45vw;
     height: 100%;
     float: left;
-    &__text{
-      height:50px;
-      width:100%;
-      background-color: lawngreen;
-      text-align: center;
+    margin-left: 5%;
+    &__video{
+      width: 100%;
+    }
+    &__content{
+      padding-top: 5%;
 
+      &__title{
+        // margin-left: 40px;
+        height: 50px;
+        width:100%;
+        background-color: #1b3996;
+        color: white;
+        font-size: 34px;
+        p{
+          margin-left: 15px;
+        }
+
+      }
     }
   }
   &__right{
     width: 25vw;
     height: 100%;
     float: left;
+    &__text{
+      background-color: green;
+      padding-top: 10px;;
+    }
   }
 }

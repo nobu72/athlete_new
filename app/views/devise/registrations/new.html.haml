@@ -21,7 +21,11 @@
     .post__main__signin
       %h2 新規会委員登録
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-        = render "devise/shared/error_messages", resource: resource
+        -# = render "devise/shared/error_messages", resource: resource
+        .field
+          = f.label :お名前（フルネーム）
+          %br/
+          = f.text_field :name
         .field
           = f.label :メールアドレス
           %br/
@@ -34,7 +38,7 @@
           %br/
           = f.password_field :password, autocomplete: "new-password"
         .field
-          = f.label :パスワード（確認用）
+          = f.label :パスワード（確認）
           %br/
           = f.password_field :password_confirmation, autocomplete: "new-password"
         .actions
@@ -42,7 +46,7 @@
       -# = render "devise/shared/links"
 
       
-  .footer
+  .login__footer
     %p HOME
     %p NEWS
     %p TEAM
