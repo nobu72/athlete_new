@@ -6,18 +6,14 @@
       = link_to "新規会員登録", new_user_registration_path()
     
   .post__main
-    
-
-    
-
     %video{:class=>"post__main__video",:autoplay => "", :loop => "", :muted => "", :src => "https://i.gyazo.com/2eaad851ac3ab53a90e2e23d11bf4862.mp4"}
     .post__main__text
       %p このアプリケーションは
       %p 日々の練習や試合をチーム内で共有できます。
       %p ミーティングでメンバーが集まれなくても大丈夫。
       %p どこにいてもミーティングに参加できます。
-    .post__main__signin
-      %h2 Log in
+    .post__main__login
+      %h2 ログイン
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .field
           = f.label :メールアドレス
@@ -36,7 +32,7 @@
       -# = render "devise/shared/links"
 
       
-  .footer
+  .login__footer
     %p HOME
     %p NEWS
     %p TEAM

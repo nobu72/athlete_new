@@ -1,8 +1,4 @@
-.header
-  .header__title
-    = link_to "Athlete",root_path
-  .header__login
-    = link_to "ログアウト",destroy_user_session_path(),method: :delete 
+= render "template/template_header"
 .post__new
   .post__new__center
     .post__new__center__title
@@ -18,14 +14,4 @@
         %br/
         = form.submit "投稿する" 
 
-.footer
-  %p HOME
-  %p NEWS
-  %p TEAM
-  %p MEMBER
-  %p RECRUIT
-  %p GAME
-  %p BLOG
-  %p FLAG TEAM
-  %p GALLERY
-  %p SCHEDULE
+= render "template/template_footer"

@@ -1,50 +1,16 @@
-.index__main
-  .header
-    .header__title
-      = link_to "Athlete",root_path
-    .header__login
-      -# = link_to "新規会員登録", new_user_registration_path()
-      -# = link_to "ログイン", new_user_session_path()
-      = link_to "ログアウト",destroy_user_session_path(),method: :delete 
+= render "template/template_header"
+
+.post__index__main
+  .post__index__main__center
+    .post__index__main__center__content
+      .post__index__main__center__content__title
+        %p 最新の投稿
+    - @post.each do |post|
+      %video{:class=>"post__index__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+  .post__index__main__right
+    - @posts.each do |post|
+      .post__index__main__right__text
+        =link_to "#{post.text}","/posts/#{post.id}"
+  
       
-      
-
-  .post__index__main
-    .post__index__main__left
-    
-      .post__index__main__left__function
-        = link_to "動画の投稿", new_post_path()
-        
-      .post__index__main__left__function
-        予定の追加
-      .post__index__main__left__function
-        最新の変更
-      
-
-    .post__index__main__center
-      .post__index__main__center__video
-      - @post.each do |post|
-        %video{:class=>"post__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
-
-      - @posts.each do |post|
-        .post__index__main__center__text
-          =link_to "#{post.text}","/posts/#{post.id}"
-          
-          
-       
-
-    
-
-    .post__index__main__right
-      
-  .footer
-    %p HOME
-    %p NEWS
-    %p TEAM
-    %p MEMBER
-    %p RECRUIT
-    %p GAME
-    %p BLOG
-    %p FLAG TEAM
-    %p GALLERY
-    %p SCHEDULE
+= render "template/template_footer"
