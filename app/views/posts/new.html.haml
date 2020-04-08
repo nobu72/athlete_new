@@ -4,14 +4,18 @@
     .post__new__center__title
       %h1 動画投稿
     .post__new__center__main
-      = form_with model: @post, class: :post__new__main__form, local: true do |form|
+      -# = form_with model: @post, class: :post__new__main__form, local: true do |form|
+      = form_for(@post) do |f|
         -# %span タイトル
         -# %br/
-        =form.text_field :text, placeholder: :タイトルを入力してください, class: :post__new__main__form__title
+        =f.text_field :text, placeholder: :タイトルを入力してください, class: :post__new__main__form__title
         %br/
         
-        = form.file_field :video, placeholder: "Video Url" 
+        = f.file_field :video, placeholder: "Video Url" 
         %br/
-        = form.submit "投稿する" 
+        = f.fields_for :category do |i|
+          =i.text_field :text 
+        
+        = f.submit "投稿する" 
 
 = render "template/template_footer"
