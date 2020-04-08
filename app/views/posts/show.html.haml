@@ -1,0 +1,25 @@
+.header
+  .header__title
+    = link_to "Athlete",root_path
+  .header__login
+    = link_to "ログアウト",destroy_user_session_path(),method: :delete 
+
+.post_show
+  .postTitle
+    = @post.text
+  .show__video
+    %video{:controls => "controls", :height => "350", :width => "700"}
+      %source{:src => "#{@post.video}"}
+
+.footer
+  %p HOME
+  %p NEWS
+  %p TEAM
+  %p MEMBER
+  %p RECRUIT
+  %p GAME
+  %p BLOG
+  %p FLAG TEAM
+  %p GALLERY
+  %p SCHEDULE
+

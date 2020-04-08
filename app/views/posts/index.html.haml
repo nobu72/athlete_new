@@ -23,37 +23,19 @@
 
     .post__index__main__center
       .post__index__main__center__video
-        
-        - @posts.each do |post|
-          .post__index__main__center__text
-            =link_to "#{post.text}",root_path
-          -# %video{:class=>"post__main__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+      - @post.each do |post|
+        %video{:class=>"post__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+
+      - @posts.each do |post|
+        .post__index__main__center__text
+          =link_to "#{post.text}","/posts/#{post.id}"
+          
           
        
 
     
-      .post__index__main__center__text
-        2020/12/12 合同練習
-      .post__index__main__center__text
-        2020/12/12 合同練習
-      .post__index__main__center__text
-        2020/12/12 合同練習
-      .post__index__main__center__text
-        2020/12/12 合同練習
-      .post__index__main__center__text
-        2020/12/12 合同練習
 
     .post__index__main__right
-
-    
-
-    -# %video{:class=>"post__main__video",:autoplay => "", :loop => "", :muted => "", :src => "https://i.gyazo.com/2eaad851ac3ab53a90e2e23d11bf4862.mp4"}
-    -# .post__main__text
-    -#   %p このアプリケーションは
-    -#   %p 日々の練習や試合をチーム内で共有できます。
-    -#   %p ミーティングでメンバーが集まれなくても大丈夫。
-    -#   %p どこにいてもミーティングに参加できます。
-
       
   .footer
     %p HOME

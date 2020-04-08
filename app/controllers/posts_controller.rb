@@ -14,7 +14,12 @@ class PostsController < ApplicationController
   def create
     Post.create(post_params)
     redirect_to root_path
-    end
+  end
+
+  def show
+    @post = Post.find(params[:id])
+  end
+  
 
   private
 
