@@ -8,9 +8,9 @@
     - @post.each do |post|
       %video{:class=>"post__index__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
   .post__index__main__right
-    - @posts.each do |post|
+    - @category.each do |category|
       .post__index__main__right__text
-        =link_to "#{post.text}","/posts/#{post.id}"
+        -# =link_to "#{category.text}","posts/1/category/1"
       
       
 = render "template/template_footer"
