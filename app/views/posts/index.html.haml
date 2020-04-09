@@ -10,7 +10,7 @@
   .post__index__main__right
     - @category.each do |category|
       .post__index__main__right__text
-        -# =link_to "#{category.text}","posts/1/category/1"
+        =link_to "#{category.text}","#"
       
       
 = render "template/template_footer"

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :category, only: [:show]
   resources :posts, only: [:index, :new, :create,:show] 
     # resources :category, only: [:show]
-  end
+
 
 end
