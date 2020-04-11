@@ -7,10 +7,15 @@
         %p 最新の投稿
     - @post.each do |post|
       %video{:class=>"post__index__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+
+
   .post__index__main__right
-    - @category.each do |category|
-      .post__index__main__right__text
-        =link_to "#{category.text}","#"
-      
+    - @posts.each do |post1|
+      .post__index__main__right__content__text
+        .post__index__main__right__content__text__text
+          =link_to "#{post1.text}",post_path("#{post1.id}"),class:"ooo"
+        %video{:class=>"post__index__main__right__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post1.video}"}
+        
+        
       
 = render "template/template_footer"
