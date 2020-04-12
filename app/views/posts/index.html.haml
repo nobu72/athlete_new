@@ -5,8 +5,27 @@
     .post__index__main__center__content
       .post__index__main__center__content__title
         %p 最新の投稿
-    - @post.each do |post|
-      %video{:class=>"post__index__main__center__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+      - @post.each do |post|
+        %video{:class=>"post__index__main__center__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
+    .post__index__main__center__yotei
+      .post__index__main__center__yotei__content
+        .post__index__main__center__yotei__content__title
+          %p 明日の予定
+        - @tweets.each do |tweet|
+          .post__index__main__center__yotei__content__text
+            %p 日時: #{tweet.date}
+            %br/
+            %p 場所: #{tweet.place}
+            %br/
+            %p 本文: #{tweet.text}
+            %br/
+    .post__index__main__center__tweet
+      %a.twitter-timeline{:href => "https://twitter.com/Triumphant_Lion?ref_src=twsrc%5Etfw"} Tweets by Triumphant_Lion
+      %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
+
+
+
+
 
 
   .post__index__main__right

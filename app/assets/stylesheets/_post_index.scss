@@ -1,18 +1,50 @@
 .post__index__main{
-  height: 150vh;
+  height: 130vh;
   width: 100vw;
   background-color: #c0c0c0;
 
   &__center{
-    width:70%;
-    height: 90vh;
-    margin-left: 15%;
-    &__video{
-      width: 100%;
+    width:90%;
+    height: 80vh;
+    margin-left: 4%;
+    display: flex;
+    &__yotei{
+      margin-top: 5%;
+      width:20%;
+      margin-left: 30px;
+      &__content{
+        width:100%;
+        height:50%;
+        &__title{
+          height:30px;
+          background-color: #1b3996;
+          color: white;
+          p {
+            padding-top: 3px;
+            padding-left:10px;
+          }
+        }
+        &__text{
+          background-color: white;
+        
+        }
+      }
+
+    }
+    &__tweet{
+      width: 30;
+      overflow-x: auto;
+      margin-top: 5%;
+      margin-left: 30px;
+      margin-bottom: 0;
+      height: 80%;
     }
     &__content{
       padding-top: 5%;
-
+      width:50%;
+      &__video{
+        width: 100%;
+      }
       &__title{
         // margin-left: 40px;
         height: 50px;
@@ -20,21 +52,22 @@
         background-color: #1b3996;
         color: white;
         font-size: 34px;
+        
         p{
           margin-left: 15px;
+          
         }
-
       }
     }
-
+    
   }
   &__right{
     width: 90%;
     height: 45vh;
     display: flex;
     overflow:auto;
+    margin-left: 5%;
     &__content{
-      
       height:80%;
       width:30%;
       display: flex;
@@ -47,11 +80,12 @@
         &__text{
           height:50px;
           background-color: #1b3996;
-
+          a{
+          color:white;
+          font-size:30px;
+          }
         }
-        a{
-          
-        }
+ 
       }
       &__video{
         width:432px;
@@ -60,4 +94,11 @@
       }
     }
   }
+}
+
+iframe{
+  width:200px;
+  padding-top:10px;
+
+
 }

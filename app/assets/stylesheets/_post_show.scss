@@ -1,1 +1,40 @@
+.post__show{
+  height:calc(100vh - 200px);
+  width:100vw;
+  display:flex;
+  background-color: #c0c0c0;
 
+  &__left{
+    width:50%;
+    margin-left: 3%;
+    margin-top: 5%;
+    &__content{
+      height:100%;
+      &__title{
+          height:60px;
+          background-color: #1b3996;
+          }
+      &__video{
+        width:100%;
+      }
+      
+    }
+  }
+  &__right{
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 40%;
+    margin-bottom: 5%;
+    background-color: white;
+    position: relative;
+    overflow:auto;
+    &__coment{
+
+    }
+    &__form{
+      position: absolute;
+      bottom: 0;
+      margin-left: 300px;
+    }
+  }
+}

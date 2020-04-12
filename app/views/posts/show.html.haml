@@ -1,41 +1,24 @@
-.header
-  .header__title
-    = link_to "Athlete",root_path
-  .header__login
-    = link_to "ログアウト",destroy_user_session_path(),method: :delete 
+= render "template/template_header"
 
-.post_show
-  .post_show__left
-    .postTitle
-      = @post.text
-    .show__video
-      -# %video{:controls => "controls", :height => "350", :width => "700"}
-      -#   %source{:src => "#{@post.video}"}
-      %video{:class=>"post__index__main__right__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{@post.video}"}
+.post__show
+  .post__show__left
+    .post__show__left__content
+      .post__show__left__content__title
+        = @post.text
+      %video{:class=>"post__show__left__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{@post.video}"}
 
-  .post_show__right
-    .coment
+  .post__show__right
+    .post__show__right__coment
     - if @comments
       - @comments.each do |comment|
         .coment__list
           = comment.user.name
           = comment.text
 
+    .post__show__right__form
+      = form_with(model: [@post, @comment], class: :form, local: true) do |form|
+        = form.text_field :text, placeholder: :コメント, class: :form__title
+        = form.submit "SEND", class: :btn
 
-    = form_with(model: [@post, @comment], class: :form, local: true) do |form|
-      = form.text_field :text, placeholder: :コメント, class: :form__title
-      = form.submit "SEND", class: :btn
 
-
-.footer
-  %p HOME
-  %p NEWS
-  %p TEAM
-  %p MEMBER
-  %p RECRUIT
-  %p GAME
-  %p BLOG
-  %p FLAG TEAM
-  %p GALLERY
-  %p SCHEDULE
-
+= render "template/template_footer"
