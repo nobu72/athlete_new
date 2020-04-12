@@ -3,9 +3,11 @@
   width: 100%;
   color: white;
   display: flex;
+  
   p{
     padding-top: 30px;
     padding-left: 50px;
+    
   }
 
 }
@@ -20,6 +22,10 @@
   font-size: 40px;
   font-weight: 900;
   padding-top: 20px;
+  padding-left:30px;
+  a{
+    color:white;
+  }
   }
   &__login{
     margin-left: 70%;

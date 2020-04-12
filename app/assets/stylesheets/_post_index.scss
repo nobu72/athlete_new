@@ -1,32 +1,50 @@
 .post__index__main{
-  height: calc(100vh - 200px);
+  height: 130vh;
   width: 100vw;
-  background-color: white;
-  display: flex;
-  &__left{
-    width:15vw;
-    height:100%;
-    float: left;
-    &__function{
-      height:50px;
-      width:100%;
-      background-color: lawngreen;
-      text-align: center;
+  background-color: #c0c0c0;
+
+  &__center{
+    width:90%;
+    height: 80vh;
+    margin-left: 4%;
+    display: flex;
+    &__yotei{
+      margin-top: 5%;
+      width:20%;
+      margin-left: 30px;
+      &__content{
+        width:100%;
+        height:50%;
+        &__title{
+          height:30px;
+          background-color: #1b3996;
+          color: white;
+          p {
+            padding-top: 3px;
+            padding-left:10px;
+          }
+        }
+        &__text{
+          background-color: white;
+        
+        }
+      }
 
     }
-
-  }
-  &__center{
-    width:45vw;
-    height: 100%;
-    float: left;
-    margin-left: 5%;
-    &__video{
-      width: 100%;
+    &__tweet{
+      width: 30;
+      overflow-x: auto;
+      margin-top: 5%;
+      margin-left: 30px;
+      margin-bottom: 0;
+      height: 80%;
     }
     &__content{
       padding-top: 5%;
-
+      width:50%;
+      &__video{
+        width: 100%;
+      }
       &__title{
         // margin-left: 40px;
         height: 50px;
@@ -34,20 +52,53 @@
         background-color: #1b3996;
         color: white;
         font-size: 34px;
+        
         p{
           margin-left: 15px;
+          
         }
+      }
+    }
+    
+  }
+  &__right{
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    overflow:auto;
+    margin-left: 5%;
+    &__content{
+      height:80%;
+      width:30%;
+      display: flex;
+      
+      &__text{
+        padding-top: 10px;
+        margin-left: 20px;
+        // height:80%;
+        // width:30%;
+        &__text{
+          height:50px;
+          background-color: #1b3996;
+          a{
+          color:white;
+          font-size:30px;
+          }
+        }
+ 
+      }
+      &__video{
+        width:432px;
+        // height:243px;
 
       }
     }
   }
-  &__right{
-    width: 25vw;
-    height: 100%;
-    float: left;
-    &__text{
-      background-color: green;
-      padding-top: 10px;;
-    }
-  }
+}
+
+iframe{
+  width:200px;
+  padding-top:10px;
+
+
 }
