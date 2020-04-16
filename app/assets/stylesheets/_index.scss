@@ -28,7 +28,7 @@
   height:90vh;
   width: 100%;
   position: relative;
-  background-color: #1b3996;
+  background-color: grey;
   
   &__video{
     
@@ -45,14 +45,13 @@
     padding-left: 10%;
     font-weight: bold;
     background-color: rgba( 0, 0, 0, .2);
-    width: 100%;
-    height:41vh;
+    // height:41vh;
 
    
   }
   &__login{
     position: absolute;
-    height: 24vh;
+    height: 26vh;
     width:15%;
     background-color: #fff;
     margin-left: 75%;

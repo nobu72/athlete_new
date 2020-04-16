@@ -13,14 +13,14 @@ class PostsController < ApplicationController
   def new
    
     @post = Post.new
-    @post.build_category
+    # @post.build_category
 
   end
 
   def create
 
     @post = Post.create(post_params)
-    @post.save
+    # @post.save
     redirect_to root_path
   end
 
@@ -34,9 +34,14 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:text, :video,category_attributes:[:text,:post_id])
+    params.require(:post).permit(:text, :video)
 
   end
+
+  # def post_params
+  #   params.require(:post).permit(:text, :video,category_attributes:[:text,:post_id])
+
+  # end
 
 
   def logged_in_user

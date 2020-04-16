@@ -1,5 +1,8 @@
-= form_with model: @tweet, class: :form, local: true do |form|
-  = form.text_field :date, placeholder: :日時, class: :form__title
-  = form.text_field :place,  placeholder: :場所, class: :form__title
-  = form.text_area :text, placeholder: :本文, class: :form__title
-  = form.submit "SEND"
+= render "template/template_header"
+.tweet__main
+  = form_with model: @tweet, class: :form, local: true do |form|
+    = form.text_field :date, placeholder: :日時, class: :form__title
+    = form.text_field :place,  placeholder: :場所, class: :form__title
+    = form.text_area :text, placeholder: :本文, class: :form__title
+    = form.submit "SEND"
+= render "template/template_footer"

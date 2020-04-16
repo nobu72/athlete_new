@@ -13,6 +13,11 @@
       &__title{
           height:60px;
           background-color: #1b3996;
+          p{
+            color: white;
+            font-weight:900;
+            font-size: 40px;
+          }
           }
       &__video{
         width:100%;
@@ -27,14 +32,26 @@
     margin-bottom: 5%;
     background-color: white;
     position: relative;
-    overflow:auto;
+    
     &__coment{
-
+      height:90%;
+      background-color: white;
+      overflow:auto;
     }
     &__form{
       position: absolute;
       bottom: 0;
-      margin-left: 300px;
+      margin-left: 30px;
+      #comment_text{
+        height:40px;
+        width:450px;
+
+      }
+      .btn{
+        height:40px;
+        width: 80px;
+        background-color: white;
+      }
     }
   }
 }

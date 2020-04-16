@@ -1,31 +1,6 @@
 
-.index__main{
-  height:120vh;
-  width: 100vw;
-}
-.header{
-  height:100px;
-  width: 100vw;
-  background-color: #1b3996;
-  color: white;
-  display: flex;
-  &__title{
-  font-size: 40px;
-  font-weight: 900;
-  padding-top: 20px;
-  }
-  &__login{
-    margin-left: 70%;
-    font-size: 20px;
-    font-weight: 900;
-    padding-top: 35px;
-
-  }
-  
-}
-
 .post__main{
-  height:80vh;
+ 
   width: 100%;
   position: relative;
   background-color: #1b3996;
