@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'posts#index'
   resources :category, only: [:show]
   resources :tweets, only: [:new,:create]
-  resources :posts, only: [:index, :new, :create,:show] do
+  resources :posts, only: [:index, :new, :create,:show,:destroy] do
     resources :comments, only: :create
   end
 

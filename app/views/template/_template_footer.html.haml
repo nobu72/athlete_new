@@ -1,11 +1,7 @@
 .main__footer
-  %p HOME
-  %p NEWS
-  %p TEAM
-  %p MEMBER
-  %p RECRUIT
-  %p GAME
-  %p BLOG
-  %p FLAG TEAM
-  %p GALLERY
-  %p SCHEDULE
+  = link_to "HOME",root_path
+  = link_to "NEW VIDEOS",new_post_path()
+  = link_to "NEW SCHEDULE", new_tweet_path()
+  = link_to "LOG OUT",destroy_user_session_path(),method: :delete 
+  = link_to "TWITTER",'https://twitter.com/Triumphant_Lion?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ATriumphant_Lion&ref_url=http%3A%2F%2Flocalhost%3A3000%2F'
+ 
