@@ -13,7 +13,7 @@
   font-size: 40px;
   font-weight: 900;
   padding-top: 20px;
-
+  padding-left:20px;
   }
   &__login{
     margin-left: 80%;
@@ -90,4 +90,15 @@
 .post__main__center__video{
   height:300px;
   width:600px;
+}
+
+.header__signin{
+  margin-left: 75%;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 35px;
+    a{
+      color: white;
+    }
+
 }

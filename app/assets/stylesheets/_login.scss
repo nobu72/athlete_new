@@ -12,12 +12,6 @@
     background-color: #fff;
     position: absolute;    
     // height:90vh;
-    &__color{
-      height: 100%;
-      width: 100%;
-      background-color: rgba( 0, 0, 0, .2);
-      // position: absolute;
-    }
   }
   &__text{
     position: absolute;
@@ -29,7 +23,6 @@
     // background-color: rgba( 0, 0, 0, .2);
     width: 90vw;
     height:36vh;
-    z-index: 2;
   }
   &__signin{
     position: absolute;
