@@ -6,7 +6,7 @@
     .post__new__center__content
       .post__new__center__content__main
         = form_for(@post) do |f|
-          %p タイトル ※必須
+          %p タイトル ※必須項目
           =f.text_field :text, placeholder: :タイトルを入力してください, class: :post__new__center__content__main__title
           %br/
           

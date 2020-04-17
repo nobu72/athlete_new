@@ -5,8 +5,9 @@
     .post__show__left__content
       .post__show__left__content__title
         %p  #{@post.text}
-        = link_to "削除","posts/"post.id"
-        -# posts/"{@post.id} ,method: :delete
+        -# = link_to "削除","posts/post.id"
+        = link_to '削除', "/posts/#{@post.id}",method: :delete
+
       %video{:class=>"post__show__left__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{@post.video}"}
 
   .post__show__right

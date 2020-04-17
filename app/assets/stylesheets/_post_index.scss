@@ -19,6 +19,7 @@
           height:30px;
           background-color: #1b3996;
           color: white;
+          position: relative;
           p {
             padding-top: 3px;
             padding-left:10px;
@@ -52,10 +53,17 @@
         background-color: #1b3996;
         color: white;
         font-size: 34px;
-        
+        position: relative;
+        display: flex;
         p{
           margin-left: 15px;
           
+        }
+        a{
+          font-size:20px;
+          margin-left: 60%;
+          margin-top: 12px;
+          color: white;
         }
       }
     }

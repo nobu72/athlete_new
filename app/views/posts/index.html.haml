@@ -5,6 +5,8 @@
     .post__index__main__center__content
       .post__index__main__center__content__title
         %p 最新の投稿
+        - @post.each do |post|
+          = link_to "詳細" ,post_path("#{post.id}")
       - @post.each do |post|
         %video{:class=>"post__index__main__center__content__video",:autoplay => "", :loop => "", :muted => "", :src => "#{post.video}"}
     .post__index__main__center__yotei
