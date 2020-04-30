@@ -4,19 +4,22 @@
 時間の無い中、ミーティングで集まれなくても自由にコミニュケーションが取れます。
  
 # DEMO
+ [![Image from Gyazo](https://i.gyazo.com/9d5152318d0bee2b273d542b3d8e8f3d.jpg)](https://gyazo.com/9d5152318d0bee2b273d542b3d8e8f3d)
+ ホーム画面で投稿した動画を確認出来ます。
  
-
+ [![Image from Gyazo](https://i.gyazo.com/cbbfa5ee99e69c719c00ffec4dd2484c.gif)](https://gyazo.com/cbbfa5ee99e69c719c00ffec4dd2484c)
+投稿した動画にコメントができます。
  
 # Features
  
-"hoge"のセールスポイントや差別化などを説明する
+動画をPC内のライブラリーから選択し投稿できます。
  
 # Requirement
  
 "hoge"を動かすのに必要なライブラリなどを列挙する
  
-* huga 3.5.2
-* hogehuga 1.0.2
+* ruby '2.5.1'
+* gem 'rails', '~> 5.2.3'
  
 # Installation
  
