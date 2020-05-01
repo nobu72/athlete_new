@@ -10,52 +10,28 @@
  [![Image from Gyazo](https://i.gyazo.com/cbbfa5ee99e69c719c00ffec4dd2484c.gif)](https://gyazo.com/cbbfa5ee99e69c719c00ffec4dd2484c)
 投稿した動画にコメントができます。
  
-# Features
- 
-動画をPC内のライブラリーから選択し投稿できます。
- 
 # Requirement
  
 "hoge"を動かすのに必要なライブラリなどを列挙する
  
 * ruby '2.5.1'
-* gem 'rails', '~> 5.2.3'
- 
-# Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
-```bash
-pip install huga_package
-```
- 
+* rails '5.2.3'
+
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
  
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+git clone https://github.com/nobu72/athlete_new
+cd athlete_new
+rails s
 ```
  
 # Note
  
-注意点などがあれば書く
+ゲストユーザー
+ID gest@gest
+PASS WORD　gestgest
  
 # Author
- 
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+* 井上啓伸
+* nobu7238@gmail.com
