@@ -12,8 +12,6 @@
  
 # Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
 * ruby '2.5.1'
 * rails '5.2.3'
 
@@ -27,10 +25,9 @@ rails s
 ```
  
 # Note
- 
-ゲストユーザー
-ID gest@gest
-PASS WORD　gestgest
+ ゲストユーザー
+* アドレス gest@gest
+* パスワード　gestgest
  
 # Author
 * 井上啓伸
